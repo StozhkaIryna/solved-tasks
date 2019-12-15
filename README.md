@@ -1,9 +1,6 @@
-# solved-tasks
-* task 1
-```javascript
-const a = 123;
-// Hello world 
-arr2 [111];
-arr3 [222];
-// test 2
-```
+5 without numbers !!
+
+
+function unusualFive(abd, adb, dba, bda, aab) {
+  return unusualFive.length;
+}
