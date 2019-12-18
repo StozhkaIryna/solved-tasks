@@ -1,4 +1,4 @@
-5 without numbers !!
+#### 5 without numbers !!
 
 function unusualFive(abd, adb, dba, bda, aab) {
   return unusualFive.length;
@@ -10,8 +10,7 @@ function greet() {
   return "hello world!";
 }
 
-// --- //
-Beginner Series #2 Clock
+#### Beginner Series #2 Clock
 
 function past(h, m, s){
  seconds = 0
@@ -25,4 +24,16 @@ function past(h, m, s){
  console.log(past(0,1,1))
 }
 
-//--//
+#### Third Angle of a Triangle
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
+
+#### Sum of angles
+ function angle(n) {
+  return  (n - 2) * 180;
+ }
+ 
+ 
+  
+  
