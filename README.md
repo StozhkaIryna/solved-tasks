@@ -162,3 +162,79 @@ function getSum( a,b ){
 return sum
 }
 ```
+### Convert a Number to a String!
+* https://www.codewars.com/kata/5265326f5fda8eb1160004c8
+```javascript
+function numberToString(num) {
+  return (num.toString());
+  return (num + '');
+  return (String(num));
+}
+```
+### Number toString
+* https://www.codewars.com/kata/number-tostring
+```javascript
+var a = 123..toString();
+var a = 123 .toString()
+var a = (123).toString();
+var a = 123 + '';
+var a = "123";
+var a = Number(123).toString();
+var a = 123["toString"]();
+let a = `${123}`;
+const a = '123';
+```
+### Convert a String to a Number!
+* https://www.codewars.com/kata/convert-a-string-to-a-number/javascript
+```javascript
+var stringToNumber = function(str){
+  return parseInt(str);
+  return + "";
+  return + str;
+  return toNumber(str);
+  return +myStringVariable;
+}
+```
+### Convert a Boolean to a String
+* https://www.codewars.com/kata/convert-a-boolean-to-a-string
+```javascript
+function booleanToString(b){
+  return b + "";
+  return b.toString();
+  return b["toString"]();
+  return `${b}`;
+  return "b";
+}
+```
+### Sum The Strings
+* https://www.codewars.com/kata/sum-the-strings
+```javascript
+function sumStr(a,b) {
+  return (+a) + (+b) + '';
+ return Number(a) + Number(b) + '';
+}
+```
+### Discover The Original Price
+* https://www.codewars.com/kata/discover-the-original-price/javascript
+```javascript
+function discoverOriginalPrice(discountedPrice, salePercentage){
+ const pers = (100-salePercentage)
+  return (discountedPrice/pers*100).toFixed(2);
+
+
+const discoverOriginalPrice = (dis, sale) => Math.round(dis/(1-(sale/100))*100)/100;
+```
+### Formatting decimal places #0
+* https://www.codewars.com/kata/formatting-decimal-places-number-0/javascript
+```javascript
+function twoDecimalPlaces(n) {
+  return (+n.toFixed(2));
+}
+```
+### How many times should I go?
+* https://www.codewars.com/kata/how-many-times-should-i-go/javascript
+```javascript
+function howManyTimes(annualPrice, individualPrice) {
+ return Math.ceil(annualPrice/individualPrice)
+}
+```
