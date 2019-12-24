@@ -238,3 +238,26 @@ function howManyTimes(annualPrice, individualPrice) {
  return Math.ceil(annualPrice/individualPrice)
 }
 ```
+### Count Odd Numbers below n
+* https://www.codewars.com/kata/count-odd-numbers-below-n/javascript
+```javascript
+ function oddCount(n){
+ const oddCount = n
+ return Math.floor(n/2)
+}
+```
+### Keep Hydrated!
+* https://www.codewars.com/kata/keep-hydrated-1/javascript
+```javascript
+function litres(time) {
+  const w = 0.5;
+  return Math.floor(time * w);
+}
+```
+### Area of a Square
+* https://www.codewars.com/kata/area-of-a-square/javascript
+```javascript
+function squareArea(A){
+  return Number(Math.pow(2 * A / 3.1416, 2).toFixed(2))
+}
+```
