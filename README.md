@@ -261,3 +261,25 @@ function squareArea(A){
   return Number(Math.pow(2 * A / 3.1416, 2).toFixed(2))
 }
 ```
+### Return the closest number multiple of 10
+* https://www.codewars.com/kata/return-the-closest-number-multiple-of-10/javascript
+```javascript
+const closestMultiple10 = num => {
+  return Math.round(num/10)*10;
+};
+```
+### Keep up the hoop
+* https://www.codewars.com/kata/keep-up-the-hoop/javascript
+```javascript
+ function hoopCount (n) {
+   if (n<10) return "Keep at it until you get it";
+   if (n>=10) return "Great, now move on to tricks";
+}
+```
+### Simple Comparison?
+* https://www.codewars.com/kata/simple-comparison/javascript
+```javascript
+function add(a, b){
+	return (+a) == (+b);
+}
+```
