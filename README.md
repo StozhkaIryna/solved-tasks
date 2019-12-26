@@ -252,3 +252,199 @@ function add(a, b){
 	return (+a) == (+b);
 }
 ```
+
+[Return the closest number multiple of 10](https://www.codewars.com/kata/return-the-closest-number-multiple-of-10/javascript)
+```javascript
+ const closestMultiple10 = num => {
+  return Math.round(num/10)*10;
+};
+```
+[Keep up the hoop](https://www.codewars.com/kata/keep-up-the-hoop/javascript)
+```javascript
+ function hoopCount (n) {
+   if (n<10) return "Keep at it until you get it";
+   if (n>=10) return "Great, now move on to tricks";
+}
+```
+[Simple Comparison?](https://www.codewars.com/kata/simple-comparison/javascript)
+```javascript
+ function add(a, b){
+	return (+a) == (+b);
+}
+```
+[Is he gonna survive?](https://www.codewars.com/kata/is-he-gonna-survive/javascript)
+```javascript
+ function hero(bullets, dragons){
+if (bullets >= dragons * 2) return true;
+else return false
+}
+```
+[Even or Odd](https://www.codewars.com/kata/even-or-odd/javascript)
+```javascript
+ function even_or_odd(n) {
+  if (n%2) return "Odd";
+  else return "Even";
+}
+```
+
+```javascript
+function even_or_odd(number){
+  return number % 2 ? "Odd" : "Even"
+}
+```
+```javascript
+function even_or_odd(number) {
+   return number % 2 === 0 ? 'Even' : 'Odd';
+}
+```
+[Simple multiplication](https://www.codewars.com/kata/simple-multiplication/javascript)
+```javascript
+ function simpleMultiplication(n) {
+    if (n%2 === 0) return n*8;
+    if (n%2 === 1) return n*9;
+}
+```
+[What's the real floor?](https://www.codewars.com/kata/whats-the-real-floor/javascript)
+```javascript
+function getRealFloor(n) {
+  if (n > 14) return n - 2
+  if (n > 0) return n - 1
+  return n
+}
+```
+[Determine offspring sex based on genes XX and XY chromosomes](https://www.codewars.com/kata/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes/train/javascript)
+```javascript
+function chromosomeCheck(sperm) {
+   if(sperm == "XY" || sperm == "YX" || sperm == "YY"){
+   return "Congratulations! You're going to have a son.";
+   }else if(sperm == "XX"){
+   return "Congratulations! You're going to have a daughter.";
+   }
+}
+```
+[Calculate BMI](https://www.codewars.com/kata/calculate-bmi/javascript)
+```javascript
+function bmi(w, h){
+ const b = (w/h/h);
+ if (b <= 18.5) return 'Underweight';
+ if (b <= 25.0) return 'Normal';
+ if (b <= 30.0) return 'Overweight';
+ if (b > 30) return 'Obese'
+}
+```
+```javascript
+const bmi = (weight, height) => {
+
+ let x = (weight / (height * height))
+ 
+ return x <= 18.5 ? "Underweight"
+      : x <= 25.0 ? "Normal"
+      : x <= 30.0 ? "Overweight"
+      : x > 30   && "Obese"
+}
+```
+
+[Alan Partridge II - Apple Turnover](https://www.codewars.com/kata/alan-partridge-ii-apple-turnover/train/javascript)
+```javascript
+function apple(x){
+  if (x*x >= 1000) return 'It\'s hotter than the sun!!';
+  if (x <= 999) return 'Help yourself to a honeycomb Yorkie for the glovebox.';
+} 
+```
+[Sleigh Authentication](https://www.codewars.com/kata/sleigh-authentication/javascript)
+```javascript
+function Sleigh() {}
+Sleigh.prototype.authenticate = function(name, password) {
+return name === 'Santa Claus' && password === 'Ho Ho Ho!';
+};
+```
+[Student's Final Grade](https://www.codewars.com/kata/students-final-grade/javascript)
+```javascript
+function finalGrade (e, p) {
+  if (e > 90 || p > 10) return 100;
+  if (e > 75 && p >= 5) return 90;
+  if (e > 50 && p >= 2) return 75;
+  return 0;
+}
+```
+[Can we divide it?](https://www.codewars.com/kata/can-we-divide-it/javascript)
+```javascript
+function isDivideBy(n, a, b) {
+  if (n%a == 0 && n%b == 0) return true;
+  else return false;
+}
+```
+[L1: Set Alarm](https://www.codewars.com/kata/l1-set-alarm/train/javascript)
+```javascript
+function setAlarm(employed, vacation){
+  return employed && !vacation;
+}
+```
+```javascript
+function setAlarm(employed, vacation){
+return employed === true && vacation === false;
+}
+```
+[Rock Paper Scissors!](https://www.codewars.com/kata/rock-paper-scissors/javascript)
+```javascript
+const rps = (p1, p2) => {
+ if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!';
+ if (p1 === 'scissors' && p2 === 'paper') return 'Player 1 won!';
+ if (p1 === 'paper' && p2 === 'rock') return 'Player 1 won!';
+   if (p2 === 'rock' && p1 === 'scissors') return 'Player 2 won!';
+   if (p2 === 'scissors' && p1 === 'paper') return 'Player 2 won!';
+   if (p2 === 'paper' && p1 === 'rock') return 'Player 2 won!';
+      else return 'Draw!';
+}
+```
+[** Calculate Two People's Individual Ages !!](https://www.codewars.com/kata/calculate-two-peoples-individual-ages/javascript)
+```javascript
+ function getAges(s,d){
+ if (d<0||s<0) return null;
+   s=s/2
+   d/=2
+   if (s+d<0||s-d<0) return null;
+   return [s+d,s-d]
+};
+```
+[101 Dalmatians - squash the bugs, not the dogs!](https://www.codewars.com/kata/56f6919a6b88de18ff000b36)
+```javascript
+function howManyDalmatians(n){
+  if (n <= 10) return "Hardly any";
+  else if (n <= 50) return "More than a handful!";
+  else if (n === 101) return "101 DALMATIANS!!!";
+  else return "Woah that's a lot of dogs!";
+}
+```
+[Do I get a bonus?](https://www.codewars.com/kata/do-i-get-a-bonus/javascript)
+```javascript
+function bonusTime(salary, bonus) {
+ const s1 = '£'+ salary * 10 + '';
+ const s2 = '£'+ salary + '';
+ if (salary > 0 && bonus === true)  return s1;
+ if (salary > 0 && bonus === false) return s2;
+}
+```
+```javascript
+function bonusTime(salary, bonus) {
+  return bonus ? `£${10 * salary}` : `£${salary}`;
+}
+```
+[Training JS #7: if..else and ternary operator](https://www.codewars.com/kata/training-js-number-7-if-dot-else-and-ternary-operator/javascript)
+```javascript
+function saleHotdogs(n){
+   if (n<5) return n*100;
+   if (n>=5 && n<10) return n*95;
+   if (n>=10) return n*90;
+ }
+```
+[Be Concise I - The Ternary Operator](https://www.codewars.com/kata/be-concise-i-the-ternary-operator/javascript)
+```javascript
+function describeAge(a) {    
+  return "You're a(n) " + (
+    a > 64 ? "elderly":
+      a > 17 ? "adult":
+        a > 12 ? "teenager":
+          "kid"
+    );
+```
