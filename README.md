@@ -461,4 +461,23 @@ function basicOp(o, v1, v2)
   return 0;
 }
 ```
-
+[Simple calculator](https://www.codewars.com/kata/simple-calculator/javascript)
+```javascript
+ function calculator(a,b,s){
+  if (a === "number", b === "number", s === "+" ) return (a+b);
+   if (a === "number", b === "number", s === "-" ) return (a-b);
+    if (a === "number", b === "number", s === "*" ) return (a*b);
+    if (a === "number", b === "number", s === "/" ) return (a/b);
+      else return "unknown value";
+}
+```
+```javascript
+ function calculator(a,b,s){
+const arr = ['*', '/', '+', '-'];
+  if (arr.includes(s) && Number.isInteger(a) && Number.isInteger(b)){
+  return eval(a+s+b)
+} else {
+ return "unknown value";
+ }
+ }
+```
