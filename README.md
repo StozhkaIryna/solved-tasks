@@ -557,3 +557,23 @@ var b = {
 };
 return b[a];
 ```
+[isReallyNaN](https://www.codewars.com/kata/isreallynan/javascript)
+```javascript
+const isReallyNaN = (val) => {
+  return Number.isNaN(val)
+  return true || false;
+};
+```
+```javascript
+Is integer safe to use?
+https://www.codewars.com/kata/is-integer-safe-to-use/javascript
+function SafeInteger(n){
+  return Number.isSafeInteger(n);
+}
+```
+[Return Negative](https://www.codewars.com/kata/return-negative/javascript)
+```javascript
+function makeNegative(num) {
+ return -Math.abs(num);
+}
+```
