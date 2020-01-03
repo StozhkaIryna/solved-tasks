@@ -481,3 +481,36 @@ const arr = ['*', '/', '+', '-'];
  }
  }
 ```
+[Sum of Multiples](https://www.codewars.com/kata/sum-of-multiples/javascript)
+```javascript
+ function sumMul(n,m){
+ if (n >= m) return "INVALID";
+  let x = 0;
+   for (i = n; i < m; i+=n){
+   x += i;
+ }
+   return x;
+}
+```
+```javascript
+function sumMul(n, m) {
+    const arr = [];
+    for (let i = 0; i < m; i++) {
+        if (i % n === 0) {
+            arr.push(i);
+        }
+    }
+    const sum = arr.reduce((a, b) => a + b, 0);
+    return arr.length < 1 ? `INVALID` : sum;
+}
+```
+
+[Difference Of Squares](https://www.codewars.com/kata/difference-of-squares/javascript)
+```javascript
+const differenceOfSquares = n => {
+  const nN = Array.from({ length: n }, (_, index) => index + 1)
+  const sqSum = nN.reduce((total, number) => total + number, 0) ** 2
+  const sumSq = nN.reduce((total, number) => total + number ** 2, 0)
+  return sqSum - sumSq
+}
+```
