@@ -564,9 +564,8 @@ const isReallyNaN = (val) => {
   return true || false;
 };
 ```
+[Is integer safe to use?](https://www.codewars.com/kata/is-integer-safe-to-use/javascript)
 ```javascript
-Is integer safe to use?
-https://www.codewars.com/kata/is-integer-safe-to-use/javascript
 function SafeInteger(n){
   return Number.isSafeInteger(n);
 }
