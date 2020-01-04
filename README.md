@@ -576,3 +576,45 @@ function makeNegative(num) {
  return -Math.abs(num);
 }
 ```
+[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/javascript)
+```javascript
+function SeriesSum(n){
+  var a = 0;
+  for ( i = 0; i < n; ++i){
+   a += 1 / (1 + i * 3)
+  }
+  return a.toFixed(2)
+  return a.prototype.toString(n)
+}
+```
+[Grasshopper - Summation](https://www.codewars.com/kata/grasshopper-summation/javascript)
+```javascript
+var summation = function (num) {
+  let x = 0;
+  for (i = 1; i <= num; i++) {
+    x += i;
+  }
+  return x;
+}
+```
+[Draw stairs](https://www.codewars.com/kata/draw-stairs/javascript)
+```javascript
+function drawStairs(n) {
+  result = [];
+  for (let i = 0; i < n; i++) {
+    space = ' ';
+    result.push('I\n' + space.repeat(i));
+  }
+  result[n - 1] = 'I';
+  return result.join(' ');
+  return [...Array(n)].map((_, i) => ' '.repeat(i) + 'I').join('\n');
+}
+```
+```javascript
+function drawStairs(n) {
+let step = "I";
+  for(i = 1; i<n; i++){
+   step+="\n" + " ".repeat(i) + "I";
+  } return step
+}
+```
