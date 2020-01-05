@@ -618,3 +618,44 @@ let step = "I";
   } return step
 }
 ```
+[Power](https://www.codewars.com/kata/power/javascript)
+```javascript
+function numberToPower(n, p){
+ let x=1;
+  for (let i=1; i<=p; i++){ 
+   x*= n
+  }
+  return x
+}
+```
+[Opposite number](https://www.codewars.com/kata/opposite-number/javascript)
+```javascript
+function opposite(num){
+ var a = -1;
+  return (num*a);
+}
+```
+[Invert values](https://www.codewars.com/kata/invert-values/javascript)
+```javascript
+function invert(arr){
+  var a;
+   return arr.map(a => a === 0 ? a : -a);
+}
+```
+```javascript
+function invert(array) {
+  let newAry = [];
+  for (let i = 0; i < array.length; i++) {
+    if ( array[i] === 0) {
+      newAry.push(array[i]);
+    } else {
+      newAry.push(array[i] * -1)
+    }
+  }
+  return newAry;
+}
+```
+
+
+
+
