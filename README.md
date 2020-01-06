@@ -252,25 +252,11 @@ function add(a, b){
 	return (+a) == (+b);
 }
 ```
-
 [Return the closest number multiple of 10](https://www.codewars.com/kata/return-the-closest-number-multiple-of-10/javascript)
 ```javascript
  const closestMultiple10 = num => {
   return Math.round(num/10)*10;
 };
-```
-[Keep up the hoop](https://www.codewars.com/kata/keep-up-the-hoop/javascript)
-```javascript
- function hoopCount (n) {
-   if (n<10) return "Keep at it until you get it";
-   if (n>=10) return "Great, now move on to tricks";
-}
-```
-[Simple Comparison?](https://www.codewars.com/kata/simple-comparison/javascript)
-```javascript
- function add(a, b){
-	return (+a) == (+b);
-}
 ```
 [Is he gonna survive?](https://www.codewars.com/kata/is-he-gonna-survive/javascript)
 ```javascript
@@ -655,7 +641,29 @@ function invert(array) {
   return newAry;
 }
 ```
-
+[BASIC: Making Six Toast.](https://www.codewars.com/kata/basic-making-six-toast/javascript)
+```javascript
+function sixToast(num) {
+  var a = 6;
+  return Math.abs(num-6);
+}
+```
+[Closest elevator](https://www.codewars.com/kata/closest-elevator/javascript)
+```javascript
+function elevator(l, r, call){
+  return Math.abs(call-r) > Math.abs(call-l) ? 'left' : 'right';
+}
+```
+```javascript
+function squareDigits(n){
+  let r = n.toString().split('');
+  const arr = [];
+  for (let i=0; i<r.length; i++){
+    arr.push(Math.pow(r[i],2)) 
+  }
+  return +arr.join('');
+}
+```
 
 
 
