@@ -664,6 +664,79 @@ function squareDigits(n){
   return +arr.join('');
 }
 ```
+[To square(root) or not to square(root)](https://www.codewars.com/kata/57f6ad55cca6e045d2000627)
+```javascript
+function squareOrSquareRoot(arr) {
+  return arr.map(el => Number.isInteger(Math.sqrt(el)) ? Math.sqrt(el) : el ** 2);  
+}
+```
+```javascript
+function squareOrSquareRoot(arr){
+  for (let i=0; i<arr.length; i++){
+    if (!(Math.sqrt(arr[i]) % 1)){
+     arr[i] = Math.sqrt(arr[i])
+    } else {
+      arr[i] = arr[i]**2;
+    }
+  } 
+  return arr;  
+}
+```
+[Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020)
+```javascript
+function squareDigits(n){
+   return +n.toString().split('').map( x => x**2).join('')
+  }
+
+function squareDigits(n){
+  let r = n.toString().split('');
+  const arr = [];
+  for (let i=0; i<r.length; i++){
+    arr.push(Math.pow(r[i],2)) 
+  }
+  return +arr.join('');
+}
+```
+[Squares sequence](https://www.codewars.com/kata/squares-sequence/javascript)
+```javascript
+function squares(x, n) {
+  let arr = [];
+  for (let i = 0; i < n; i++){
+    arr.push(x)
+    x = Math.pow(x, 2)
+  }
+  return arr;
+}
+```
+[You're a square!](https://www.codewars.com/kata/youre-a-square/javascript)
+```javascript
+const isSquare = function(n){
+   return Math.sqrt(n) % 1 === 0;
+}
+```
+[Find the next perfect square!](https://www.codewars.com/kata/find-the-next-perfect-square/javascript)
+```javascript
+function findNextSquare(sq){
+  if (Math.sqrt(sq) % 1 === 0){
+    return ((Math.sqrt(sq)+1)**2);
+  } else {
+    return -1;
+  }
+}
+```
+```javascript
+function findNextSquare(sq) {
+    let r = Math.sqrt(sq)
+    return r % 1 ? -1 : ++r * r
+}
+```
+[Beginner Series #4 Cockroach](https://www.codewars.com/kata/beginner-series-number-4-cockroach/javascript)
+```javascript
+function cockroachSpeed(s){
+  const i = 0.036;
+   return Math.floor((s)/i);
+}
+```
 
 
 
