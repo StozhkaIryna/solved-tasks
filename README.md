@@ -737,6 +737,45 @@ function cockroachSpeed(s){
    return Math.floor((s)/i);
 }
 ```
+[Holiday VIII - Duty Free](https://www.codewars.com/kata/holiday-viii-duty-free/javascript)
+```javascript
+function dutyFree(normPrice, discount, hol){
+ return(Math.floor(hol / normPrice / discount * 100))
+}
+```
+[All Star Code Challenge #22](https://www.codewars.com/kata/all-star-code-challenge-number-22/javascript)
+```javascript
+function toTime(s){
+  if(s/3600 > 3600){
+  } return `${Math.floor(s/60/60)} hour(s) and ${Math.floor(s % 3600/60)} minute(s)`;
+ }
+```
+```javascript
+function toTime(seconds) {
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor(seconds % 3600 / 60);
+  return `${hours} hour(s) and ${minutes} minute(s)`
+}
+```
+[Formatting decimal places #1](https://www.codewars.com/kata/formatting-decimal-places-number-1/javascript)
+```javascript
+const twoDecimalPlaces = n => Math.trunc(n*100).toFixed(2)/100
+```
+[Calculate Price Excluding VAT](https://www.codewars.com/kata/5890d8bc9f0f422cf200006b/javascript)
+```javascript
+function excludingVatPrice(price) {
+  return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100;
+}
+```
+```javascript
+function excludingVatPrice(price){
+ if (price === null){
+  return -1;
+ } else{
+ return +(Number(price/1.15).toFixed(2));
+ }
+ }
+```
 
 
 
