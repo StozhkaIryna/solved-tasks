@@ -197,7 +197,7 @@ function sumStr(a,b) {
 function discoverOriginalPrice(discountedPrice, salePercentage){
  const pers = (100-salePercentage)
   return (discountedPrice/pers*100).toFixed(2);
-
+}
 
 const discoverOriginalPrice = (dis, sale) => Math.round(dis/(1-(sale/100))*100)/100;
 ```
@@ -432,7 +432,7 @@ function describeAge(a) {
       a > 17 ? "adult":
         a > 12 ? "teenager":
           "kid"
-    );
+    )};
 ```
 [Basic Mathematical Operations](https://www.codewars.com/kata/basic-mathematical-operations/javascript)
 ```javascript
@@ -775,6 +775,16 @@ function excludingVatPrice(price){
  return +(Number(price/1.15).toFixed(2));
  }
  }
+```
+[What is type of variable?](https://www.codewars.com/kata/57293671c98f77e84b000065/train/javascript)
+```javascript
+ function type(value) {
+  if(toString.call(value) == '[object Array]') return 'array';
+  if(toString.call(value) == '[object Date]') return 'date';
+  if(toString.call(value) == '[object Null]') return 'null';
+
+  else return typeof(value);
+}
 ```
 
 
