@@ -786,6 +786,26 @@ function excludingVatPrice(price){
   else return typeof(value);
 }
 ```
+[Century From Year](https://www.codewars.com/kata/century-from-year/javascript)
+```javascript
+function century(year) {
+  return Math.ceil(year/100);
+}
+
+/////////
+
+function century(year) {
+  var century = 0;
+  
+  for(var i = 0; i < year; i++) {
+    if(i % 100 == 0) {
+      century++;
+    }
+  }
+  return century;
+}
+```
+
 
 
 
