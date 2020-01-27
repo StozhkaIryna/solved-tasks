@@ -805,7 +805,18 @@ function century(year) {
   return century;
 }
 ```
-
-
+[How good are you really?](https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript)
+```javascript
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = 0;
+  for (let i=0; i<classPoints.length; i++){
+  sum = sum + classPoints[i]
+  }
+  return sum/classPoints.length < yourPoints
+}
+function betterThanAverage(classPoints, yourPoints) {
+  return classPoints.reduce((a, b) => a+b, 0)/classPoints.length < yourPoints;
+}
+```
 
 
