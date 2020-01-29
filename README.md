@@ -829,5 +829,16 @@ function cubeOdd(arr) {
   return sum;
 }
 ```
-
+[Divide and Conquer](https://www.codewars.com/kata/57eaec5608fed543d6000021/train/javascript)
+```javascript
+function divCon(x){
+  sumN = 0;
+  sumS = 0;
+   for (let i=0; i<x.length; i++){
+    if (typeof x[i] === 'number') sumN = sumN+x[i];
+     else sumS = sumS + +x[i];
+   } 
+   return sumN-sumS;
+}
+```
 
