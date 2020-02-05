@@ -859,3 +859,14 @@ function powersOfTwo(n){
   return res;
 }
 ```
+[Remove the minimum](https://www.codewars.com/kata/563cf89eb4747c5fb100001b)
+```javascript
+function removeSmallest(numbers) {
+ let newArray = [];
+ let index = numbers.indexOf(Math.min(...numbers));
+  for(let i = 0; i < numbers.length; i++){
+   if(i !== index) newArray.push(numbers[i]);
+  }
+ return newArray;
+}
+```
