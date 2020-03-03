@@ -877,6 +877,13 @@ const reverseSeq = n => {
   return Array(n).fill(0).map((a,b) => n - b);
 };
 ```
-
+[Well of Ideas - Easy Version](https://www.codewars.com/kata/57f222ce69e09c3630000212)
+```javascript
+const well = x => {
+  const good_count = x.filter(x => x == 'good').length;
+  return good_count < 1 ? 'Fail!' : 
+         good_count < 3 ? 'Publish!' : 'I smell a series!';
+}
+```
 
 
