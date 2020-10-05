@@ -885,5 +885,19 @@ const well = x => {
          good_count < 3 ? 'Publish!' : 'I smell a series!';
 }
 ```
-
+[Anagram difference](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/javascript)
+```javascript
+function anagramDifference(w1,w2){
+  let count = 0;
+  w1 = w1.split('');
+  w2 = w2.split('')
+  for (let el of w1){
+    if (w2.includes(el)){
+      count++;
+      w2[w2.indexOf(el)] = 0;
+    }
+  }
+  return w1.length + w2.length - count * 2
+}
+```
 
